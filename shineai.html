@@ -1,51 +1,362 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>shine.ai</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>shine ai</title>
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
   </head>
-<body>
-    <section id="intro">
-    <img src="images/1.png" alt="landingpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
-    <img src="images/2.png" alt="2ndpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
-    <img src="images/3.png" alt="3rdpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
-    <img src="images/4.png" alt="4rdpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
-    <img src="images/5.png" alt="5thpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
+  <body>
+    <!-- Back To Top Start -->
+    <a id="backtotop" data-tippy-content="Back To Top.">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+    <!-- Back To Top End -->
 
+    <!-- Navbar Start -->
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand mt-2 mb-2">
+        <a class="navbar-item" href="#">
+          <strong>shine.ai</strong>
 
+          <!-- or if you want to use image -->
+          <!-- <img
+            src="image link or path"
+            width="112"
+            height="28"
+          /> -->
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger has-text-white"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="#" class="navbar-item is-tab">
+            Home
+          </a>
+          <a href="#stats" class="navbar-item is-tab">
+            About
+          </a>
+          <a href="#features" class="navbar-item is-tab">
+            Features
+          </a>
+          <a href="#stats" class="navbar-item is-tab">
+            Feedback
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a href="https://www.linkedin.com/company/shine-ai/" class="navbar-item is-tab" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="" class="button is-blurple">
+                <strong><i class="fa-solid fa-right-to-bracket mr-2"></i>
+                  Login</strong
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero bg-base is-fullheight">
+      <div class="hero-body">
+        <div class="">
+          <div class="columns">
+            <div class="column mr-6 mt-12" data-aos="fade-up">
+		<img
+                class="image"
+                src="assets/img/logo.png"
+                alt="logo"
+                style="width: 20rem;"
+              />
+              <!--<p class="title has-text-white has-text-weight-bold">
+                Time to add [your bot] to your server.
+              </p> -->
+              <p class="subtitle has-text-grey-light is-size-6 mt-3">
+                A companion to support students, working professionals, home makers and everyone, offering expert-based mental health programs and tools focused on uplifting your mood and helping you prevent anxiety and stress.
+              </p>
+              <div class="buttons">
+               <!-- <a href="#" class="button is-info">
+                  <strong>Add To Discord</strong>
+                </a> -->
+
+                <a href="https://forms.gle/Z6mBpCxuEPZXXc3N7" class="button is-primary is-outlined">
+                  <strong><i class="fa-solid"></i> Subscribe Now </strong>
+                </a>
+              </div>
+            </div>
+            <div class="column mt-6" data-aos="fade-left">
+              <img
+                class="image has-image-centered vert-move mt-4"
+                src="assets/img/main_design.png"
+                alt="main image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered" data-tippy-content="Scroll Down">
+        <a href="#features"
+          ><i
+            class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"
+          ></i
+        ></a>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Hero Waves Start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290">
+      <path
+        fill="#121B31"
+        fill-opacity="1"
+        d="M0,288L24,261.3C48,235,96,181,144,154.7C192,128,240,128,288,149.3C336,171,384,213,432,202.7C480,192,528,128,576,133.3C624,139,672,213,720,213.3C768,213,816,139,864,101.3C912,64,960,64,1008,106.7C1056,149,1104,235,1152,240C1200,245,1248,171,1296,144C1344,117,1392,139,1416,149.3L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Hero Waves End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Features</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+        <div class="shape-right" data-aos="fade-up-left">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#121B31"
+              d="M42.7,-62.9C50.9,-52.8,50.1,-34.4,51.7,-19.2C53.4,-4,57.4,8,56.6,20.8C55.8,33.7,50.1,47.4,39.9,53.8C29.6,60.1,14.8,59.1,0.4,58.5C-14,58,-28,57.9,-38,51.5C-48.1,45,-54.3,32.3,-61.3,18.1C-68.4,4,-76.4,-11.7,-71.9,-22.7C-67.4,-33.6,-50.4,-39.8,-36.3,-47.9C-22.2,-56.1,-11.1,-66.3,3.1,-70.5C17.2,-74.7,34.5,-72.9,42.7,-62.9Z"
+              transform="translate(80 80)"
+            />
+          </svg>
+        </div>
+
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            <h4 class="title">Feature <span class="has-text-primary">#1</span></h4>
+            <p class="subtitle mt-3">
+              <b>Live chat with AI Companion </b></p>
+This feature allows users to engage in a conversation with an AI companion who can provide emotional support and a listening ear. The AI companion can respond to the user's messages and offer suggestions on how to cope with difficult situations or emotions. This feature provides users with a judgment-free space to talk about their feelings and can help them feel less alone.            </p>
+          </div>
+          <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/feature1.png"
+              alt="feature1 img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+
+      <!-- single feature start (Right) -->
+      <div class="single-feature">
+        <div class="shape-left" data-aos="fade-up-right">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#121B31"
+              d="M54.2,-67.2C69.4,-63.5,80.4,-46.6,84.6,-28.7C88.7,-10.8,86,8.1,76.8,21.4C67.6,34.7,51.9,42.3,38.1,50.3C24.2,58.3,12.1,66.7,-2.8,70.5C-17.7,74.3,-35.3,73.6,-45.6,64.5C-55.9,55.3,-58.8,37.7,-63.3,21.2C-67.7,4.7,-73.7,-10.6,-71.8,-25.4C-69.8,-40.2,-59.9,-54.5,-46.6,-58.9C-33.3,-63.2,-16.7,-57.6,1.4,-59.6C19.5,-61.5,39,-71,54.2,-67.2Z"
+              transform="translate(80 80)"
+            />
+          </svg>
+        </div>
+
+        <div class="columns mt-6">
+          <div class="column" data-aos="fade-right">
+            <img
+              class="image has-image-centered"
+              src="assets/img/feature2.png"
+              alt="feature2 img"
+            />
+          </div>
+          <div class="column">
+            <h4 class="title">
+              Feature <span class="has-text-primary">#2</span>
+            </h4>
+            <p class="subtitle mt-3">             
+ <b>Expert Curated Mood Enhancing Sessions</b></p>
+
+This feature offers a range of activities that users can participate in to enhance their mood and well-being. These sessions are curated by experts in their respective fields and may include yoga, meditation, dance, music, and other activities that are known to relieve stress and promote a sense of well-being. The app will offer a variety of sessions to cater to different interests and levels of physical ability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Right) -->
+
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+        <div class="shape-right" data-aos="fade-up-left">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#121B31"
+              d="M42.7,-62.9C50.9,-52.8,50.1,-34.4,51.7,-19.2C53.4,-4,57.4,8,56.6,20.8C55.8,33.7,50.1,47.4,39.9,53.8C29.6,60.1,14.8,59.1,0.4,58.5C-14,58,-28,57.9,-38,51.5C-48.1,45,-54.3,32.3,-61.3,18.1C-68.4,4,-76.4,-11.7,-71.9,-22.7C-67.4,-33.6,-50.4,-39.8,-36.3,-47.9C-22.2,-56.1,-11.1,-66.3,3.1,-70.5C17.2,-74.7,34.5,-72.9,42.7,-62.9Z"
+              transform="translate(90 90)"
+            />
+          </svg>
+        </div>
+
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            <h4 class="title">
+              Feature <span class="has-text-primary">#3</span>
+            </h4>
+            <p class="subtitle mt-3">
+ <b>Appointment with Professionals</b></p>
+This feature allows users to schedule appointments with industry experts, therapists, fitness trainers, dance trainers, and other professionals who can provide guidance and support. These professionals can offer one-on-one advice and support tailored to the user's needs. This feature can be especially helpful for users who are struggling with specific issues or need personalized guidance.
+            </p>
+          </div>
+          <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/feature2.png"
+              alt="feature3 img"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+      <!-- single feature start (Right) -->
+      
+      <!-- single feature end (Right) -->
+
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Stats Section Start -->
+    <section id="stats" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Feedback</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+
+      <div class="columns mt-6">
+        <div class="column has-text-centered">
+<img class="image"
+              src="assets/img/brackets.png"
+              alt="feature3 img"
+		style="width:3rem;"
+            />
+          <p class="subtitle lined">We need to start addressing awareness and stigma around mental health to deal with mental health disorders. This platform looks great to initiate solving such concerns.
+</p>
+          <span class="subtitle has-text-weight-bold blurple"><i></i> Pandora </span>
+        </div>
+
+        <div class="column has-text-centered">
+<img class="image"
+              src="assets/img/brackets.png"
+              alt="feature3 img"
+		style="width:3rem;"
+            />
+          <p class="subtitle lined">One aspect of keeping mental well-being a priority is talking about it and making communication with therapists and counsellors easy, shine.ai looks to provide such platform! great
+</p>
+          <span class="subtitle has-text-weight-bold blurple"><i></i> Sara Sebestian</span>
+        </div>
+
+        <div class="column has-text-centered">
+<img class="image"
+              src="assets/img/brackets.png"
+              alt="feature3 img"
+		style="width:3rem;"
+            />
+          <p class="subtitle lined">I sometimes feel a lot of pressure as I am on loan and also looking at the job market situation I feel tense. Looking at a platform like shine.ai, I feel safe and looking forward to using it.
+</p>
+          <span class="subtitle has-text-weight-bold blurple"><i></i> David Fernandez</span>
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section End -->
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+      <div class="columns">
+        <div class="column has-text-left">
+          <p class="title has-text-weight-bold">
+            Say Hello to <span class="blurple">shine.ai</span>
+          </p>
+          <p class="subtitle mt-3 has-text-gray">
+This mobile app is built to seek, forge, and grow yourself, helping you discover your potential strength about your mind and body. With multiple partnerships with experts, the team behind shine.ai provides all time probable solution to treat complex emotional situations while also helping you understand the right ways to treat mental health.
+The AI companion identifies your sentiments and provides best tips to uplift your mood with number of solutions and activities.
+          </p>
+          <a href="https://forms.gle/Z6mBpCxuEPZXXc3N7" class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-book"></i> Register Today</strong></a
+          >
+        </div>
+
+<div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/aboutme.png"
+              alt="feature3 img"
+		style="width:25rem;"
+            />
+          </div>
+      </div>
+    </section>
+    <!-- Invite Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+          <a href="#" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          &nbsp; &nbsp;
+          <a href="#" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <p>
+          <span class="has-text-weight-bold">shine.ai</span>
+          <br />
+          &copy; <span id="cp-year"></span> Copyright shine.ai . All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
