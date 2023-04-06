@@ -1,43 +1,225 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HoloCompass</title>
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/style_hc.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
   </head>
-<body>
-    <section id="intro">
-    <img src="images/Home.png" alt="landingpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
-    <img src="images/Page2.png" alt="2ndpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
-    <img src="images/Page3.png" alt="3rdpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
-    <img src="images/Page4.png" alt="4rdpage" style=” min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    top:-100%; bottom:-100%;
-    left:-100%; right:-100%;
-    margin:auto;"/>
+  <body>
+    <!-- Back To Top Start -->
+    <a id="backtotop" data-tippy-content="Back To Top.">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+    <!-- Back To Top End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar is-fixed-top bg-base"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand mt-2 mb-2 ">
+        <a class="navbar-item" href="#">
+          <strong>HoloCompass</strong>
+
+          <!-- or if you want to use image -->
+          <!-- <img
+            src="image link or path"
+            width="112"
+            height="28"
+          /> -->
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger has-text-white"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu bg-base">
+        <div class="navbar-start">
+          <a href="#" class="navbar-item is-tab">
+            Home
+          </a>
+          <a href="#about" class="navbar-item is-tab">
+            About
+          </a>
+          <a href="#features" class="navbar-item is-tab">
+            Features
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="https://forms.gle/eLg6gXdGo5E95dE57" class="button is-blurple">
+                <strong><i class="fa-solid fa-right-to-bracket mr-2"></i>
+                  Request Demo</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero bg-base is-fullheight">
+      <div class="hero-body">
+        <div class="">
+          <div class="columns">
+            <div class="column mr-6 has-image-centered vert-move mt-12" data-aos="fade-up">
+		<img
+                class="image"
+                src="assets/img/logo.png"
+                alt="logo"
+                style="width: 200rem;"
+              />
+              <div class="buttons">
+
+              </div>
+            </div>
+            <div class="column mt-6" data-aos="fade-left">
+		
+              <p class="title has-text-weight-bold">
+                Welcome
+              </p>
+              <p class="subtitle is-size-6 mt-12">
+                Taking educational trainings to another level with the real-time telepresence of guest speakers, professors, and professionals from across the globe to a common platform using hologram technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered" data-tippy-content="Scroll Down">
+        <a href="#features"
+          ><i
+            class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"
+          ></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Features Section Start -->
+    <section id="features" class="section ">
+      <div class="has-text-centered has-image-centered">
+        <h1 class="title lined">Product Highlights</h1>
+  <div class="line line-center blurple"></div>
+      </div>
+<br>
+      <div class="columns mt-6">
+        <div class="column has-text-centered has-image-centered bg-base ">
+<img class="image center"
+              src="assets/img/feature1.png"
+              alt="feature1 img"
+		style="width:10rem;"
+            /> <br>
+          <span class="title has-text-weight-bold blurple"><i></i> No Additional Hardware Software Needed </span><br>
+<p><br>
+          <span class="subtitle blurple">We need to start addressing awareness and stigma around mental health to deal with mental health disorders. This platform looks great to initiate solving such concerns.
+</span></p>
+
+</div>
+        <div class="column has-text-centered has-image-centered mt-44 bg-base ">
+<img class="image center"
+              src="assets/img/feature2.png"
+              alt="feature2 img"
+		style="width:10rem;"
+	            /><br>
+          <span class="title has-text-weight-bold blurple"><i></i> Meet professionals from across the globe</span><br>
+<p><br>
+          <span class="subtitle blurple">Real time telepresence of professionals
+</span></p>
+        </div>
+ 
+        <div class="column has-text-centered has-image-centered bg-base ">
+<img class="image center"
+              src="assets/img/feature3.png"
+              alt="feature3 img"
+		style="width:10rem;"
+            /><br>
+          <span class="title has-text-weight-bold blurple"><i></i> Educational Collaborations</span><br>
+<p><br>
+          <span class="subtitle blurple">Targeting Colleges, Schools and students with a pain point of reduced attention span and decreasing class engagement
+</span></>
+        </div>
+      </div>
 
 
+    <!-- Stats Section End -->
+
+    <!-- Invite Section Start -->
+    <section id="about" class="section">
+      <div class="columns">
+        <div class="column has-text-left">
+          <p class="title has-text-weight-bold">
+            About the <span class="lined">Technology</span>
+          </p>
+          <p class="subtitle mt-3 has-text-gray">
+Holographic display technology creates 3D virtual images using light diffraction. 
+<br>
+It's a rising trend in media technology, and can be used in many industries.
+<br>
+It's especially useful for education, where telepresence and immersive environments are needed for clear and exciting communication and interaction.
+          </p>
+          <a href="https://forms.gle/eLg6gXdGo5E95dE57" class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-book"></i> Register Today</strong></a
+          >
+        </div>
+
+<div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/event.png"
+              alt="demo img"
+		style="width:100rem;"
+            />
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+
+        </div>
+
+        <p>
+          <span class="has-text-weight-bold">HoloCompass</span>
+          <br />
+          &copy; <span id="cp-year"></span> Copyright HoloCompass. All Rights
+          Reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
